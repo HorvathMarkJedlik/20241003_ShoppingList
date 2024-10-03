@@ -11,7 +11,13 @@ export class ArticleListComponent implements OnInit {
   itemInCart: ArticleModel[] = [];
 
   addItem(article: ArticleModel){
-    this.itemInCart.push(article);
+    article.count++;
+    if(!this.itemInCart.includes(article)){
+      this.itemInCart.push(article);
+    }
+    else{
+
+    }
   }
 
   ngOnInit(): void {

@@ -12,7 +12,7 @@ export class ArticleItemComponent implements OnInit {
   constructor(){
   }
   ngOnInit(): void {
-      this.article.count = 1;
+      // this.article.count = 1;
 
   }
 
