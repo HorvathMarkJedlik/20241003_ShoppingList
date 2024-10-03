@@ -1,1 +1,9 @@
-<p>article-item works!</p>
+<div class="card">
+  <h4>{{ article.name }}</h4>
+  <img [src]="article.image_url" [alt]="article.name">
+  <div class="quantity" >
+    <span>Mennyiség: {{article.count}}</span>
+    <button>+</button>
+    <button>-</button>
+  </div>
+</div>

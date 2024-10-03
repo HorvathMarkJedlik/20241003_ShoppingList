@@ -8,6 +8,11 @@ import { ArticleModel } from '../models/article.model';
 })
 export class ArticleListComponent implements OnInit {
   itemsInStorage: ArticleModel[] = [];
+  itemInCart: ArticleModel[] = [];
+
+  addItem(article: ArticleModel){
+    this.itemInCart.push(article);
+  }
 
   ngOnInit(): void {
     this.itemsInStorage = [

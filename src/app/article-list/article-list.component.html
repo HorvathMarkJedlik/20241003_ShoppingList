@@ -4,7 +4,17 @@
     @for (item of itemsInStorage; track $index){
         <li>
           <!-- <img src="{{ item.image_url }}" alt="{{item.name}}"> -->
-          <img [src]="item.image_url" [alt]="item.name">
+          <img [src]="item.image_url" [alt]="item.name" (click)="addItem(item)">
         </li>
     }
 </ul>
+
+
+
+<h3>Termékek a kosárban</h3>
+<div class="cart-items">
+  @for (item of itemInCart; track $index){
+    <app-article-item [article]="item"></app-article-item>
+  }
+</div>
+
