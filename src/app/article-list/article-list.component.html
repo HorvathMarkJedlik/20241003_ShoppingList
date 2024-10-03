@@ -1,0 +1,10 @@
+<h2>Bevásárló lista</h2>
+<ul>
+
+    @for (item of itemsInStorage; track $index){
+        <li>
+          <!-- <img src="{{ item.image_url }}" alt="{{item.name}}"> -->
+          <img [src]="item.image_url" [alt]="item.name">
+        </li>
+    }
+</ul>
