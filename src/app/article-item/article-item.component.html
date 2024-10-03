@@ -3,7 +3,7 @@
   <img [src]="article.image_url" [alt]="article.name">
   <div class="quantity" >
     <span>Mennyiség: {{article.count}}</span>
-    <button>+</button>
-    <button>-</button>
+    <button (click)="increase()" >+</button>
+    <button (click)="decrease()" >-</button>
   </div>
 </div>
