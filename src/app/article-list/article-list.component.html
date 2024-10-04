@@ -14,7 +14,7 @@
 <h3>Termékek a kosárban</h3>
 <div class="cart-items">
   @for (item of itemInCart; track $index){
-    <app-article-item [article]="item"></app-article-item>
+    <app-article-item [article]="item"(articleDeleted)="deleteitem($event)"></app-article-item>
   }
 </div>
 

@@ -20,6 +20,10 @@ export class ArticleListComponent implements OnInit {
     }
   }
 
+  deleteitem(id: number){
+    this.itemInCart = this.itemInCart.filter(item => item.id !== id)
+  }
+
   ngOnInit(): void {
     this.itemsInStorage = [
       {
